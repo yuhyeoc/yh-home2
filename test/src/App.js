@@ -7,8 +7,6 @@ import styled, { ThemeProvider } from 'styled-components';
 import theme from './component/styles/Tagged';
 import './App.css';
 import './component/section/nav.css';
-// fade효과 API
-import { Fade, Slide } from 'react-reveal';
 
 // 컴포넌트
 import Header from './component/header/header';

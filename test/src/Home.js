@@ -10,7 +10,6 @@ import {
 } from 'react-router-dom';
 import SectionBegin from './component/section/section';
 import './App.css';
-import { Fade, Slide } from 'react-reveal';
 
 export default function Home(props) {
   const Body = styled.body`
