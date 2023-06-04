@@ -76,15 +76,17 @@ a {
 }
 /* 폰트 */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 #root {
-  max-width: 1440px;
+  font-family: Montserrat;
   min-height: 100vh;
   text-align: center;
   color: #333333;
   margin: auto;
   font-family: 'Noto Sans KR', sans-serif;
   background: #eaeaea;
-
+  padding-top: 72px;
+  padding-top: 6.2500vw;
   /* 포지션 */
   position: relative;
 }
@@ -149,7 +151,6 @@ body {
 }
 a {
   text-decoration: none;
-  color: var(--text-color);
 }
 
 /* ArticleCon Class */
@@ -220,8 +221,7 @@ a {
 /* footer Class */
 footer {
   display: block;
-  width: 100%;
-  max-width: 1440px;
+  width: 100vw;
   background: #262626;
   opacity: 0.7;
   color: var(--text-color);
@@ -236,16 +236,24 @@ footer {
 /* /footer Class */
 /* navTest  */
 .header {
-  max-width: 1440px;
   align-items: center;
-  color: #f2f2f2;
+  color: #333333;
+  font-family: Montserrat Nanum Gothic;
+  font-weight: bold;
   padding: 20px;
   margin-bottom: 96px;
-  background: #262626;
+  background: #fff;
   opacity: 0.7;
+  /* 포지션 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 .header-wrapper {
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -253,6 +261,11 @@ footer {
   z-index: 99;
   margin: 0 auto;
   text-align: center;
+}
+.header-wrapper .hd_logo {
+  display: inline-block;
+  width: 9.6875vw;
+  font-size: 1.4583vw;
 }
 .header-wrapper > li {
   width: 6.9444vw;
@@ -263,13 +276,13 @@ footer {
   display: block;
 }
 .show-menu {
-  width: 100%;
+  width: 100vw;
   position: absolute;
-  left: 50%;
   top: 12%;
-  z-index: 99;
+  left: 50%;
   transform: translateX(-50%);
-  opacity: 0.9;
+  z-index: 99;
+  opacity: 1;
 }
 .show-menu > li {
   line-height: 3;
@@ -284,23 +297,19 @@ footer {
   background: #eaeaea;
   color: #0d0d0d;
 }
-
 .hide-menu {
   position: absolute;
   left: 50%;
-  top: -20%;
   z-index: 999;
   transform: translateX(-50%);
+  transform: translateY(-150%);
   transition: 1s;
 }
 .sideMenu {
   width: 100%;
-  max-width: 1024px;
   text-align: center;
   transition: 0.6s;
-  color: #0d0d0d;
   background: #262626;
-  opacity: 0.8;
 }
 
 @keyframes logo-spin {
@@ -421,6 +430,7 @@ footer {
 } */
 .homeNav {
   overflow: hidden;
+  padding: 5.0000vw 0;
 }
 .homeNav ul li {
   border-bottom: 1px solid #a3bfb2;
@@ -525,6 +535,7 @@ footer {
   #root {
     padding: 0 4.2667vw;
   }
+  
 }
 
 

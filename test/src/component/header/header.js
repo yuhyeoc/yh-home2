@@ -39,8 +39,8 @@ function Header(props) {
             e.preventDefault();
           }}
         >
-          <Link to="/">
-            <img className="App-logo" width="100px" src={logo}></img>
+          <Link className='hd_logo' to="/">
+            React<br/> Portfolio
           </Link>
         </li>
         <ul className="navPc">{navLis}</ul>

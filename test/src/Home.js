@@ -31,7 +31,7 @@ export default function Home(props) {
   `;
   return (
     <ThemeProvider theme={theme}>
-    <nav className="homeNav">
+    <div className="homeNav">
       <HomeH2>React 포트폴리오</HomeH2>
       <Container>
       <li>
@@ -77,7 +77,7 @@ export default function Home(props) {
           <Link to={'/dummylist'}> dummy data 실습 </Link>
         </li>
       </Container>
-    </nav>
+    </div>
     </ThemeProvider>
   );
 }
