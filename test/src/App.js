@@ -6,6 +6,7 @@ import styled, { ThemeProvider } from 'styled-components';
 // 스타일 테마 컴포넌트
 import theme from './component/styles/Tagged';
 import './App.css';
+import './component/css/AppStyles.module.scss';
 import './component/section/nav.css';
 
 // 컴포넌트

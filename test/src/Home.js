@@ -32,7 +32,7 @@ export default function Home(props) {
   return (
     <ThemeProvider theme={theme}>
     <nav className="homeNav">
-      <HomeH2>리액트 Project</HomeH2>
+      <HomeH2>React 포트폴리오</HomeH2>
       <Container>
       <li>
           <Link to={'/profile'}> 프로필 </Link>
