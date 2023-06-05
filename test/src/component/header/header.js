@@ -40,7 +40,7 @@ function Header(props) {
           }}
         >
           <Link className='hd_logo' to="/">
-            포트폴리오 <br/> <span>by</span>  React
+            Seoul by<br/> <span>(진행률60%)</span>React
           </Link>
         </li>
         <ul className="navPc">{navLis}</ul>

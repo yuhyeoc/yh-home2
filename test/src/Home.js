@@ -90,7 +90,7 @@ export default function Home(props) {
           <li>
             <img src={namsan}></img>
             <Link>
-              남산타워
+              남산타워<span className='hotPl best'>Best</span>
             </Link>
           </li>
           <li>
@@ -107,22 +107,43 @@ export default function Home(props) {
           </li>
 
         </ul>
-        <HomeH2>About</HomeH2>
-        <ul className='ProjectFlex aboutSec' data-aos="fade-right"
+        <HomeH2>이벤트</HomeH2>
+        <ul className='ProjectFlex eventListWrap' data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine">
-          <li>
+          <li className='eventList'>
             <img src={chung}></img>
-            <span></span>
+            <h4>청계천 축제</h4>
+            <p>23.6.5~ 23.7.1</p>
+            <span>this.두줄제목! 청계천 뷰를 보며 감상하는 이벤트!
+            청계천 뷰를 보며 감상하는 이벤트!
+            청계천 뷰를 보며 감상하는 이벤트!
+            </span>
+            <button type='button' className='eventBtn'>신청하기</button>
           </li>
-          <li>
-          <img src={kyung}></img>
+          <li className='eventList'>
+          <img src={river}></img>
+          <h4>한강 불꽃축제</h4>
+          <p>23.6.5~ 23.7.1</p>
+          <span>한강 여름 불꽃축제</span>
+            <button type='button' className='eventBtn'>신청하기</button>
           </li>
-          <li>
+          <li className='eventList'>
           <img src={namsan}></img>
+          <h4>남산 벚꽃 축제</h4>
+          <p>23.6.5~ 23.7.1</p>
+          <span>this.두줄제목! 남산 뷰를 보며 감상하는 이벤트!
+            남산 뷰를 보며 감상하는 이벤트!
+            남산 뷰를 보며 감상하는 이벤트!
+            </span>
+            <button type='button' className='eventBtn'>신청하기</button>
           </li>
-          <li>
+          <li className='eventList'>
           <img src={lTower}></img>
+          <h4>L타워 레이져쇼</h4>
+          <p>23.6.5~ 23.7.1</p>
+          <span>잠들지 않는 뷰맛집! L타워 리뷰이벤트</span>
+          <button type='button' className='eventBtn'>신청하기</button>
           </li>
         </ul>
       </div>
