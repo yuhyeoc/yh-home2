@@ -8,6 +8,7 @@ export default function WeatherApi() {
   const [location, setLocation] = useState('');
   const [result, setResult] = useState({});
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}`;
+  const url2 = `https://api.openweathermap.org/data/2.5/weather?q=tokyo&appid=${API_KEY}`;
   // url data 조회
 
   const searchWeather = async (e) => {

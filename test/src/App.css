@@ -233,6 +233,10 @@ footer {
   margin-top: 96px;
   line-height: 3;
 }
+footer .footerWrap > h2 {
+  font-size: 16px;
+  font-size: 0.8333vw;
+}
 /* /footer Class */
 /* navTest  */
 .header {
@@ -438,10 +442,6 @@ footer {
   overflow: hidden;
   /* padding: 5.0000vw 0; */
 }
-.homeNav ul li:hover {
-  transform: scale(1.1);
-  transition: 0.2s;
-}
 .homeNav ul li a {
   display: block;
   width: inherit;
@@ -475,6 +475,7 @@ footer {
   display: flex;
   justify-content: start;
   flex-flow: row wrap;
+  margin-bottom: 5.0000vw;
 }
 
 .ProjectFlex > li {
@@ -492,6 +493,44 @@ footer {
 .ProjectFlex > li > img {
   width: 18.1250vw;
   height: 12.6042vw;
+  border-radius: 0.5208vw;
+  margin-bottom: 0.4167vw;
+}
+.ProjectFlex >li a {
+  display: inline-block;
+  background: #fff;
+  border-radius: 0.5208vw;
+  position: relative;
+  line-height: 3;
+  font-size: 20px;
+  font-size: 1.0417vw;
+}
+.ProjectFlex >li > a .hotPl {
+  display: inline-block;
+  width: 38px;
+  width: 1.9792vw;
+  line-height: 2;
+  background: red;
+  border-radius: 0.5208vw;
+  font-size: 12px;
+  font-size: 0.6250vw;
+  position: absolute;
+  top: 10%;
+  left: 28%;
+  color: #fff;
+}
+
+
+.seoulWeather {
+  position: fixed;
+  left: 1.0417vw;
+  padding: 1.0417vw;
+  top: 50%;
+  background: #fff;
+  border-radius: 6%;
+}
+.seoulWeather .homeWeather {
+  text-align: left;
 }
 
 /* 반응형 */

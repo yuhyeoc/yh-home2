@@ -1,6 +1,8 @@
 import styled, { ThemeProvider } from 'styled-components';
-import { useState, props } from 'react';
+import { useState, props, useEffect } from 'react';
 import theme from './component/styles/Tagged';
+import Weather from './component/section/weatherApiSeoul';
+import WeatherApi from './component/section/WeatherApi';
 import {
   BrowserRouter,
   Routes,
@@ -17,7 +19,8 @@ import lTower from './assets/imgs/l-tower.jpg';
 import namsan from './assets/imgs/namsan.jpg';
 import river from './assets/imgs/river.jpg';
 import olympic from './assets/imgs/olympic.jpg';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home(props) {
   const Body = styled.body`
@@ -28,6 +31,8 @@ export default function Home(props) {
   const HomeH2 = styled.h2`
     font-size: ${({ theme }) => theme.fontSizeObj.title};
     margin-bottom: 2.5000vw;
+    text-align: left;
+    font-size: 1.2500vw;
   `;
 
   const Container = styled.ul`
@@ -37,10 +42,16 @@ export default function Home(props) {
     overflow: hidden;
     ${({ theme }) => theme.commonStyle.homeStyle};
   `;
+
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
     <ThemeProvider theme={theme}>
     <div className="homeNav">
-      <div className='topSlider'>
+      <div className='topSlider'data-aos="fade-up"
+     data-aos-duration="3000">
         <img src={mainTop}></img>
         <div>
           <HomeH2>
@@ -50,8 +61,56 @@ export default function Home(props) {
         </div>  
       </div>
       <div className='FlexWrap'>
-      <HomeH2>관광명소</HomeH2>
-        <ul className='ProjectFlex'>
+        <HomeH2>관광명소</HomeH2>
+        <ul className='ProjectFlex' data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <li>
+            <img src={chung}></img>
+            <Link>
+              청계천<span className='hotPl'>핫플</span>
+            </Link>
+          </li>
+          <li>
+            <img src={lTower}></img>
+            <Link>
+              롯데타워
+            </Link>
+          </li>
+          <li>
+            <img src={river}></img>
+            <Link>
+              한강대교<span className='hotPl'>핫플</span>
+            </Link>
+          </li>
+          <li>
+            <img src={kyung}></img>
+            <Link>
+              경복궁
+            </Link>
+          </li>
+          <li>
+            <img src={namsan}></img>
+            <Link>
+              남산타워
+            </Link>
+          </li>
+          <li>
+            <img src={olympic}></img>
+            <Link>
+              올림픽공원
+            </Link>
+          </li>
+          <li>
+            <img src={kyung}></img>
+            <Link>
+              동대문
+            </Link>
+          </li>
+
+        </ul>
+        <HomeH2>About</HomeH2>
+        <ul className='ProjectFlex aboutSec' data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
           <li>
             <img src={chung}></img>
             <span></span>
@@ -65,18 +124,14 @@ export default function Home(props) {
           <li>
           <img src={lTower}></img>
           </li>
-          <li>
-          <img src={river}></img>
-          </li>
-          <li>
-          <img src={olympic}></img>
-          </li>
-          <li>
-          <img src={chung}></img>
-          </li>
         </ul>
       </div>
-      <Container>
+      <div className='seoulWeather'>
+        <HomeH2>서울 날씨<br />(Open Api)</HomeH2>
+        <Weather />
+      </div>
+
+      {/* <Container>
       <li>
           <Link to={'/profile'}> 프로필 </Link>
         </li>
@@ -119,7 +174,7 @@ export default function Home(props) {
         <li>
           <Link to={'/dummylist'}> dummy data 실습 </Link>
         </li>
-      </Container>
+      </Container> */}
     </div>
     </ThemeProvider>
   );

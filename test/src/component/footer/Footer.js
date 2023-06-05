@@ -8,7 +8,7 @@ class Footer extends Component {
         return(
             <footer>
                 <div className='footerWrap'>
-                    <h2>Copyright 2023</h2>
+                    <h2>Copyright 2023 All Right Reserved yh</h2>
                     <div>
                         <a>
                         {/* <FontAwesomeIcon icon="fa-brands fa-facebook" /> */}
