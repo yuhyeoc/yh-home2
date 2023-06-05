@@ -430,7 +430,7 @@ footer {
 } */
 .homeNav {
   overflow: hidden;
-  padding: 5.0000vw 0;
+  /* padding: 5.0000vw 0; */
 }
 .homeNav ul li {
   border-bottom: 1px solid #a3bfb2;
@@ -447,6 +447,17 @@ footer {
   width: inherit;
   color: #0d0d0d;
 }
+.topSlider {
+  width: 75.0000vw;
+  margin: 0 auto;
+}
+.topSlider>img {
+  width: 75.0000vw;
+}
+.topSlider>span {
+  font-size: 54px;
+}
+
 /* 반응형 */
 @media screen and (max-width: 768px) {
   /* 공통스타일 */

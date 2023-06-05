@@ -34,11 +34,12 @@ import WeatherApi from './component/section/WeatherApi';
 import DummyList from './component/section/DummyList';
 import Select from './component/section/select';
 import Profile from './component/section/profile';
+import mainSection2 from './component/section/mainSection2';
 
 export const App = () => {
   // 헤더 props
   const headerMenu = [
-    { id: 1, title: '유혁님 프로필 보기', linkTo: '/profile', subNav: '프로필' },
+    { id: 1, title: 'Profile', linkTo: '/profile', subNav: '프로필' },
     { id: 2, title: 'JSX Study', linkTo: '/props', subNav: '리액트 함수' },
     { id: 3, title: 'React Study', linkTo: '/usestate', subNav: 'JS study' },
     { id: 4, title: 'UI/UX', linkTo: '/slider', subNav: 'HTML/CSS' },

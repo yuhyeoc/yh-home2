@@ -10,6 +10,7 @@ import {
 } from 'react-router-dom';
 import SectionBegin from './component/section/section';
 import './App.css';
+import mainTop from './assets/imgs/seoul1.jpg'
 
 export default function Home(props) {
   const Body = styled.body`
@@ -32,7 +33,10 @@ export default function Home(props) {
   return (
     <ThemeProvider theme={theme}>
     <div className="homeNav">
-      <HomeH2>React 포트폴리오</HomeH2>
+      <div className='topSlider'>
+        <img src={mainTop}></img>
+      <HomeH2>Seoul</HomeH2>      
+      </div>
       <Container>
       <li>
           <Link to={'/profile'}> 프로필 </Link>
