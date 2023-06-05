@@ -2,7 +2,7 @@ import { useState, props, Fragment } from 'react';
 import React from 'react'
 import styles from '../css/AppStyles.module.scss'
 
-export default function mainSection2() {
+const mainSection2 = (props) => {
 
   return (
 
@@ -14,3 +14,5 @@ export default function mainSection2() {
        </>
   )
 }
+
+export default mainSection2;

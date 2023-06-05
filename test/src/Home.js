@@ -10,7 +10,14 @@ import {
 } from 'react-router-dom';
 import SectionBegin from './component/section/section';
 import './App.css';
-import mainTop from './assets/imgs/seoul1.jpg'
+import mainTop from './assets/imgs/seoul1.jpg';
+import chung from './assets/imgs/chung.jpg';
+import kyung from './assets/imgs/kyung.jpg';
+import lTower from './assets/imgs/l-tower.jpg';
+import namsan from './assets/imgs/namsan.jpg';
+import river from './assets/imgs/river.jpg';
+import olympic from './assets/imgs/olympic.jpg';
+
 
 export default function Home(props) {
   const Body = styled.body`
@@ -20,7 +27,7 @@ export default function Home(props) {
 
   const HomeH2 = styled.h2`
     font-size: ${({ theme }) => theme.fontSizeObj.title};
-    margin-bottom: 96px;
+    margin-bottom: 2.5000vw;
   `;
 
   const Container = styled.ul`
@@ -35,7 +42,39 @@ export default function Home(props) {
     <div className="homeNav">
       <div className='topSlider'>
         <img src={mainTop}></img>
-      <HomeH2>Seoul</HomeH2>      
+        <div>
+          <HomeH2>
+            <p>Seoul</p> 
+          </HomeH2>    
+          <span>동행·매력 특별시 서울민선 8기가 지향하는 서울의 목표(Vision)를 나타낸 슬로건으로 약자와 ‘동행’하는 상생도시, ‘매력’있는 글로벌 선도도시를 만들겠다는 의지를 담았습니다.</span>
+        </div>  
+      </div>
+      <div className='FlexWrap'>
+      <HomeH2>관광명소</HomeH2>
+        <ul className='ProjectFlex'>
+          <li>
+            <img src={chung}></img>
+            <span></span>
+          </li>
+          <li>
+          <img src={kyung}></img>
+          </li>
+          <li>
+          <img src={namsan}></img>
+          </li>
+          <li>
+          <img src={lTower}></img>
+          </li>
+          <li>
+          <img src={river}></img>
+          </li>
+          <li>
+          <img src={olympic}></img>
+          </li>
+          <li>
+          <img src={chung}></img>
+          </li>
+        </ul>
       </div>
       <Container>
       <li>

@@ -267,6 +267,11 @@ footer {
   width: 9.6875vw;
   font-size: 1.4583vw;
 }
+.header-wrapper .hd_logo > span {
+  font-size: 0.7292vw;
+  font-family: Montserrat;
+  font-weight: bold;
+}
 .header-wrapper > li {
   width: 6.9444vw;
   cursor: pointer;
@@ -429,14 +434,9 @@ footer {
   margin: 0 auto;
 } */
 .homeNav {
+  width: 75vw;
   overflow: hidden;
   /* padding: 5.0000vw 0; */
-}
-.homeNav ul li {
-  border-bottom: 1px solid #a3bfb2;
-  line-height: 3;
-  padding: 6px 0px;
-  font-size: 14px;
 }
 .homeNav ul li:hover {
   transform: scale(1.1);
@@ -449,13 +449,49 @@ footer {
 }
 .topSlider {
   width: 75.0000vw;
-  margin: 0 auto;
+  margin-bottom: 5.0000vw;
+  position: relative;
+  text-align: left;
+  color: #fff;
 }
 .topSlider>img {
   width: 75.0000vw;
 }
-.topSlider>span {
-  font-size: 54px;
+.topSlider> div > span {
+  display: block;
+  width: 50vw;
+  font-size: 22px;
+}
+.topSlider > div {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 6.8750vw;
+}
+.FlexWrap {
+  width: 75vw;
+}
+.ProjectFlex {
+  display: flex;
+  justify-content: start;
+  flex-flow: row wrap;
+}
+
+.ProjectFlex > li {
+  width: 18.1250vw;
+  /* padding: 6px 8px 6px 0;
+  padding: 0.3125vw 0.8333vw 0.3125vw 0; */
+  padding: 0px 12px 12px 0px;
+  padding: 0.0000vw 0.8333vw 0.6250vw 0.0000vw;
+  border-bottom: none;
+}
+.ProjectFlex > li:nth-child(4n) {
+  margin-right: 0;
+  padding-right: 0;
+}
+.ProjectFlex > li > img {
+  width: 18.1250vw;
+  height: 12.6042vw;
 }
 
 /* 반응형 */

@@ -34,7 +34,6 @@ import WeatherApi from './component/section/WeatherApi';
 import DummyList from './component/section/DummyList';
 import Select from './component/section/select';
 import Profile from './component/section/profile';
-import mainSection2 from './component/section/mainSection2';
 
 export const App = () => {
   // 헤더 props
