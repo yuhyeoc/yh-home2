@@ -12,10 +12,10 @@ class Weather extends Component {
         const cityName = ['Seoul', 'Newyork', 'Tokyo', 'London', 'Paris'];
         const apiKey = '75fb31dee1b87fffa83866410c58b441';
         const url =  
-          `http://api.openweathermap.org/data/2.5/weather?q=${cityName[0]}&appid=${apiKey}`;
+          `https://api.openweathermap.org/data/2.5/weather?q=${cityName[0]}&appid=${apiKey}`;
         
         const url2 =  
-          `http://api.openweathermap.org/data/2.5/weather?q=${cityName[1]}&appid=${apiKey}`;
+          `https://api.openweathermap.org/data/2.5/weather?q=${cityName[1]}&appid=${apiKey}`;
 
         // axios 라이브러리 이용
         axios.get(url)
@@ -34,7 +34,7 @@ class Weather extends Component {
     }
     // 날씨 정보 출력
     render() {
-        const imgSrc = `http://openweathermap.com/img/w/${this.state.icon}.png`;
+        const imgSrc = `https://openweathermap.com/img/w/${this.state.icon}.png`;
         if (this.state.loading) {
             return <p>Loading</p>;
         } else {

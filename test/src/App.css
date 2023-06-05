@@ -245,7 +245,7 @@ footer .footerWrap > h2 {
   font-family: Montserrat Nanum Gothic;
   font-weight: bold;
   padding: 20px;
-  margin-bottom: 96px;
+  padding: 1.042vw;
   background: #fff;
   opacity: 0.7;
   /* 포지션 */
@@ -440,7 +440,6 @@ footer .footerWrap > h2 {
 .homeNav {
   width: 75vw;
   overflow: hidden;
-  padding: 5.0000vw 0 0;
   margin: 0 auto;
 }
 .homeNav ul li a {
@@ -603,6 +602,11 @@ footer .footerWrap > h2 {
 }
 @media screen and (max-width: 768px) {
   /* 공통스타일 */
+  #root {
+    margin: 0 6.4000vw;
+    padding-top: 7.6336vw;
+    overflow: hidden;
+  }
   #backPage {
     width: 50%;
     font-size: 14px;
@@ -640,28 +644,27 @@ footer .footerWrap > h2 {
     height: 150px;
   }
   .homeNav {
-    width: 100.000vw;
-    overflow: hidden;
-    padding: 16.000vw 0 0;
+    width: 100vw;
     text-align: center;
+    margin-top: 7.6336vw;
   }
   .homeNav .FlexWrap >h2 {
     font-size: 24px;
   }
   .homeNav ul {
     width: 100vw;
-    padding: 0;
   }
   /* 메인화면 */
   .topSlider {
     width: 100vw;
     margin-bottom: 5.0000vw;
     position: relative;
-    text-align: left;
+    top: 0;
+    left: 0;
     color: #fff;
   }
   .topSlider>img {
-    width: 100%;
+    width: 100vw;
   }
   .topSlider> div > span {
     display: block;
@@ -678,33 +681,33 @@ footer .footerWrap > h2 {
   .FlexWrap {
     display: block;
     width: 100vw;
-    /* padding: 0 6.400vw; */
+    margin: 0 auto;
   }
   .ProjectFlex {
+    width: 87.200vw;
     display: block;
-    justify-content: start;
-    flex-flow: row wrap;
+    margin: 0 auto;
     margin-bottom: 5.0000vw;
   }
   
   .ProjectFlex > li {
-    width: 100vw;
-    /* padding: 6px 8px 6px 0;
-    padding: 0.3125vw 0.8333vw 0.3125vw 0; */
-    padding: 0px 12px 12px 0px;
-    padding: 0.0000vw 0.8333vw 0.6250vw 0.0000vw;
+    width: 87.200vw;
+    padding: 0 0 8.533vw;
     border-bottom: none;
     position: relative;
+  }
+  .ProjectFlex > li:last-child {
+    padding-bottom: 0;
   }
   .ProjectFlex > li:nth-child(4n) {
     margin-right: 0;
     padding-right: 0;
   }
   .ProjectFlex > li > img {
-    width: 100vw;
+    width: 87.200vw;
     height: 49.067vw;
     border-radius: 0.5208vw;
-    margin-bottom: 0.4167vw;
+    margin-bottom: 4.267vw;
   }
   .ProjectFlex >li a {
     display: inline-block;
@@ -742,6 +745,9 @@ footer .footerWrap > h2 {
   .seoulWeather .homeWeather {
     text-align: left;
   }
+  .eventListWrap {
+    margin-bottom: 25.600vw;
+  }
   .eventListWrap .eventList {
     display: block;
   }
@@ -775,14 +781,32 @@ footer .footerWrap > h2 {
     width: 100%;
     background: #D94436;
     margin-bottom: 32px;
+    margin-bottom: 8.533vw;
   }
-}
-@media screen and (max-width: 1024px) {
-  #root {
-    /* padding: 0 4.2667vw; */
-    overflow: hidden;
+  .eventListWrap .eventList:last-child .eventBtn {
+    margin-bottom: 0;
   }
-  
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100vw;
+    overflow: visible;
+    padding: 6px 0;
+  }
+  footer .footerWrap {
+    width: 100vw;
+    line-height: 2;
+  }
+  footer .footerWrap > h2 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  footer .footerWrap > span {
+    font-size: 12px;
+    font-weight: 500;
+  }
 }
 
 

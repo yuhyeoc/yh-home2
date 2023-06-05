@@ -31,6 +31,7 @@ import StyledObj from './component/section/StyledComponents';
 import MapRoof from './component/section/MapRoof';
 import Day from './component/section/Day';
 import WeatherApi from './component/section/WeatherApi';
+import Weather from './component/section/weatherApiSeoul';
 import DummyList from './component/section/DummyList';
 import Select from './component/section/select';
 import Profile from './component/section/profile';
