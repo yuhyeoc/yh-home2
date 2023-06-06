@@ -444,7 +444,6 @@ footer .footerWrap > h2 {
 }
 .homeNav ul li a {
   display: block;
-  width: inherit;
   color: #0d0d0d;
 }
 .topSlider {
@@ -497,13 +496,14 @@ footer .footerWrap > h2 {
   border-radius: 0.5208vw;
   margin-bottom: 0.4167vw;
 }
-.ProjectFlex >li a {
-  display: inline-block;
+.ProjectFlex >li > a {
+  display: block;
+  text-align: left;
   background: #fff;
   border-radius: 0.5208vw;
-  line-height: 3;
   font-size: 20px;
   font-size: 1.0417vw;
+  padding: 6px 12px;
 }
 .ProjectFlex >li > a .hotPl {
   display: inline-block;
@@ -569,6 +569,7 @@ footer .footerWrap > h2 {
 .eventListWrap .eventList .eventBtn {
   width: 100%;
   background: #D94436;
+  padding: 6px 0;
 }
 
 /* 반응형 */
@@ -714,7 +715,7 @@ footer .footerWrap > h2 {
     background: #fff;
     border-radius: 0.5208vw;
     line-height: 3;
-    font-size: 20px;
+    font-size: 16px;
   }
   .ProjectFlex >li > a .hotPl {
     display: inline-block;
