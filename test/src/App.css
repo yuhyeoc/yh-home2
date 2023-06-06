@@ -81,6 +81,8 @@ a {
   font-family: Montserrat;
   min-height: 100vh;
   text-align: center;
+  font-size: 16px;
+  font-size: 0.833vw;
   color: #333333;
   margin: auto;
   font-family: 'Noto Sans KR', sans-serif;
@@ -280,6 +282,7 @@ footer .footerWrap > h2 {
   width: 6.9444vw;
   cursor: pointer;
   font-size: 14px;
+  font-size: 1em;
 }
 .header-wrapper > li > a {
   display: block;
@@ -309,6 +312,7 @@ footer .footerWrap > h2 {
 .hide-menu {
   position: absolute;
   left: 50%;
+  top: -10%;
   z-index: 999;
   transform: translateX(-50%);
   transform: translateY(-150%);
@@ -498,7 +502,7 @@ footer .footerWrap > h2 {
 }
 .ProjectFlex >li > a {
   display: block;
-  text-align: left;
+  text-align: center;
   background: #fff;
   border-radius: 0.5208vw;
   font-size: 20px;
@@ -530,9 +534,15 @@ footer .footerWrap > h2 {
   top: 50%;
   background: #fff;
   border-radius: 6%;
+  font-size: 14px;
+  font-size: 0.729vw;
+}
+.seoulWeather > h2 {
+  font-size: 1.4em;
 }
 .seoulWeather .homeWeather {
   text-align: left;
+  font-size: 1em;
 }
 .eventListWrap .eventList {
   display: block;
@@ -583,6 +593,7 @@ footer .footerWrap > h2 {
     display: flex;
     visibility: visible;
     justify-content: space-evenly;
+    font-size: 1.5em;
   }
   .sideMenu {
     width: 100%;
@@ -719,7 +730,8 @@ footer .footerWrap > h2 {
   }
   .ProjectFlex >li > a .hotPl {
     display: inline-block;
-    width: 2.6042vw;
+    width: auto;
+    padding: 2px 6px;
     line-height: 2;
     background: red;
     border-radius: 0.5208vw;
