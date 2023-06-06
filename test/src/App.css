@@ -539,10 +539,15 @@ footer .footerWrap > h2 {
 }
 .seoulWeather > h2 {
   font-size: 1.4em;
+  text-align: center;
 }
 .seoulWeather .homeWeather {
-  text-align: left;
+  text-align: center;
+  margin: 0 auto;
   font-size: 1em;
+}
+.seoulWeather .homeWeather > img {
+  margin: 0 auto;
 }
 .eventListWrap .eventList {
   display: block;
