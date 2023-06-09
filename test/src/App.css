@@ -632,6 +632,7 @@ footer .footerWrap > h2 {
   /* /공통스타일 */
   .header {
     padding: 2.6042vw;
+    opacity: 0.9;
   }
   /* 로고 */
   .header-wrapper > li:first-child > a img {
@@ -646,7 +647,7 @@ footer .footerWrap > h2 {
   .show-menu {
     position: absolute;
     top: 7%;
-    z-index: 9;
+    z-index: 99;
     transform: translateX(-50%);
     opacity: 1;
   }
@@ -673,6 +674,14 @@ footer .footerWrap > h2 {
   }
   .homeNav ul {
     width: 100vw;
+  }
+  .show-menu {
+    letter-spacing: 2px;
+    opacity: 1;
+  }
+
+  .show-menu > li > a {
+    font-size: 14px;
   }
   /* 메인화면 */
   .topSlider {
